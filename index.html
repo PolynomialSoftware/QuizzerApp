@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Study with these practice questions">
+    <meta name="author" content="Hubert Lin">
+
+    <title>
+        Quizzer App
+    </title>
+    <!-- Bootstrap v4.0 core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- JQuery v3.1.1 -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <!-- Tether v1.4.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap v4.0 core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles (FUTURE) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Core JavaScript Methods -->
+    <script src="js/core.js"></script>
+</head>
+
+<body class="container">
+    <h1>Default Quiz Name</h1>
+    <p>Total number of questions: <span id="totalQuizQuestions">50</span></p>
+    <p>Your current Score: <span id="score">5</span></p>
+    <hr/>
+    <div>
+
+
+    <p id="question">The question goes here</p>
+    <!-- Generate radio buttons based on the question chosen -->
+    <form id="optionsForm">
+
+        <input type="radio" name="gender" value="male" checked> answer 1<br>
+        <input type="radio" name="gender" value="female"> Another answer<br>
+        <input type="radio" name="gender" value="other"> Third answer  <br>
+        <input id="NextButton" type="submit" value="Next" />
+
+    </form>
+
+
+    </div>
+</body>
+
+</html>
