@@ -36,7 +36,7 @@
                 "The place where materials are collected for staging and inspection",
                 "The place within a plant where machines are installed for production purposes",
                 "The place within a plant where finished goods are kept for sale"],
-    "answerIndex":1},
+    "answerIndex":1}
   ]
 }
 ```
