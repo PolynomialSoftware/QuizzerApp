@@ -5,14 +5,16 @@
 # Site File Structure
 ```
 .
+├── js
+|   └── core.json
 ├── quizzes
+|   ├── templateQuiz.json
 |   ├── ERPChapter1.json
 |   ├── ERPChapter2.json
 |   └── ERPChapter4.json
-├── js
-|   └── core.json
-├── styles.css
-└── index.html
+├── index.html
+├── README.md
+└── styles.css
     
 ```
 
