@@ -1,0 +1,475 @@
+{
+	"Chapter 1": {
+		"Q1": {
+			"Question": "Which term refers to business processes that are not executed by a single group or function?",
+			"Choices": {
+				"a": "Silo Effect",
+				"b": "Cross-Functiona",
+				"c": "Functional Structure",
+				"d": "Enterprise Systems",
+				"e": "Organizational Structure"
+			},
+			"Answer": "b"
+		},
+		"Q2": {
+			"Question": "Which term refers to a system in which workers complete their tasks in separate departments without regard to the consequences for the other components of the process?",
+			"Choices": {
+				"a": "ERP Effect",
+				"b": "Cross-Functional",
+				"c": "Functional Structure",
+				"d": "Enterprise Systems",
+				"e": "Silo Effect"
+			},
+			"Answer": "e"
+		},
+		"Q3": {
+			"Question": "Which system supports business processes end to end?",
+			"Choices": {
+				"a": "Management System",
+				"b": "Accounting System",
+				"c": "Enterprise System",
+				"d": "Functional Structure",
+				"e": "Document System"
+			},
+			"Answer": "c"
+		},
+		"Q4": {
+			"Question": "Which of the following statements about business processes is true?",
+			"Choices": {
+				"a": "They are executed across multiple functions.",
+				"b": "They are initiated by some type of trigger.",
+				"c": "They involve multiple steps.",
+				"d": "All of the above",
+				"e": "None of the above"
+			},
+			"Answer": "d"
+		},
+		"Q5": {
+			"Question": ".  Which of the following statements about business processes is true?",
+			"Choices": {
+				"a": "Management System",
+				"b": "Accounting System",
+				"c": "Enterprise System",
+				"d": "Functional Structure",
+				"e": "Document System"
+			},
+			"Answer": "b"
+		},
+		"Q6": {
+			"Question": "Which term refers to all of the activities involved in buying or acquiring the materials used by the organization, such as raw materials needed to make products?",
+			"Choices": {
+				"a": "Material Planning",
+				"b": "Procurement Process",
+				"c": "Production Process",
+				"d": "Fulfillment Process",
+				"e": "Lifecycle Data Management"
+			},
+			"Answer": "c"
+		},
+		"Q7": {
+			"Question": "Which process uses historical data and sales forecasts to plan which materials will be procured and produced?",
+			"Choices": {
+				"a": "Material Planning",
+				"b": "Procurement Process",
+				"c": "Production Process",
+				"d": "Fulfillment Process",
+				"e": "Lifecycle Data Management"
+			},
+			"Answer": "a"
+		},
+		"Q8": {
+			"Question": "Which process supports the design and development of products from the initial product idea stage through the discontinuation of the product? ",
+			"Choices": {
+				"a": "Material Planning",
+				"b": "Procurement Process",
+				"c": "Production Process",
+				"d": "Fulfillment Process",
+				"e": "Lifecycle Data Management"
+			},
+			"Answer": "e"
+		},
+		"Q9": {
+			"Question": "Which process tracks the financial impact of process steps with the goal of meeting legal reporting requirements?",
+			"Choices": {
+				"a": "Human Capital Management (HCM)",
+				"b": "Project Management",
+				"c": "Financial Accounting",
+				"d": "Management Accounting or Controlling (CO)",
+				"e": "None of the above"
+			},
+			"Answer": "c"
+		},
+		"Q10": {
+			"Question": "Which process is used to plan and execute large projects such as the construction of a new factory or the production of complex products such as airplanes:",
+			"Choices": {
+				"a": "Human Capital Management (HCM)",
+				"b": "Project Management",
+				"c": "Financial Accounting",
+				"d": "Management Accounting or Controlling (CO)",
+				"e": "None of the above"
+			},
+			"Answer": "b"
+		},
+		"Q11": {
+			"Question": "Which process focuses on people within an organization and includes functions such as recruiting, hiring, training, and benefits management?",
+			"Choices": {
+				"a": "Human Capital Management (HCM)",
+				"b": "Project Management",
+				"c": "Financial Accounting",
+				"d": "Management Accounting or Controlling (CO)",
+				"e": "None of the above"
+			},
+			"Answer": "a"
+		},
+		"Q12": {
+			"Question": "What is the final step of the procurement process?",
+			"Choices": {
+				"a": "Invoice",
+				"b": "Purchase Requisition",
+				"c": "Purchase Order",
+				"d": "Payment",
+				"e": "None of the above"
+			},
+			"Answer": "d"
+		},
+		"Q13": {
+			"Question": "What steps are involved in the accounting portion of the procurement process?",
+			"Choices": {
+				"a": "Receiving the materials and the invoice",
+				"b": "Creating the purchase requisition and sending payment",
+				"c": "Creating and sending the purchase order",
+				"d": "Creating the purchase requisition and receiving the materials",
+				"e": "Receiving the invoice and sending payment" 
+			},
+			"Answer": "e"
+		},
+		"Q14": {
+			"Question": "What is the first step of the production process?",
+			"Choices": {
+				"a": "Authorize Production",
+				"b": "Request Production",
+				"c": "Create Product",
+				"d": "Receive Finished Goods",
+				"e": "Issue Raw Materials"
+			},
+			"Answer": "b"
+		},
+		"Q15": {
+			"Question": "What function does the warehouse perform in the fulfillment process? ",
+			"Choices": {
+				"a": "Prepares and sends the shipment to the customer",
+				"b": "Communicates data related to the order to other parts of the organization",
+				"c": "Tracks the order",
+				"d": "Notifies the customer",
+				"e": "None of the above"
+			},
+			"Answer": "a"
+		},
+		"Q16": {
+			"Question": " ___________ is concerned with matching the demand for materials in the organization with the supply.",
+			"Choices": {
+				"a": "Business Planning",
+				"b": "The Silo Effect",
+				"c": "Project Management",
+				"d": "Material Planning",
+				"e": "None of the above"
+			},
+			"Answer": "d"
+		},
+		"Q17": {
+			"Question": "Which of the following is concerned with the storage and movement of materials?",
+			"Choices": {
+				"a": "Business Planning",
+				"b": "Silo Effect",
+				"c": "Project Management",
+				"d": "Material Planning",
+				"e": "Inventory and warehouse management (IWM)"
+			},
+			"Answer": "e"
+		},
+		"Q18": {
+			"Question": "_____________ enables an organization to optimize its product development process, from design to market, while ensuring that it complies with industry, quality, and regulatory standards?",
+			"Choices": {
+				"a": "Business Planning",
+				"b": "Lifecycle Data Management",
+				"c": "Project Management",
+				"d": "Material Planning",
+				"e": "None of the above"
+			},
+			"Answer": "b"
+		},
+		"Q19": {
+			"Question": "_____________ provides tools to manage and store documents securely and to keep track of the multiple versions of these documents?",
+			"Choices": {
+				"a": "Document Management",
+				"b": "Enterprise Management",
+				"c": "Project Management",
+				"d": "Material Planning",
+				"e": "None of the above"
+			},
+			"Answer": "a"
+		},
+		"Q20": {
+			"Question": "How does GBI Global sell its merchandise?",
+			"Choices": {
+				"a": "Directly to customers",
+				"b": "Via a network of specialized dealers",
+				"c": "Via the Internet",
+				"d": "All of the above",
+				"e": "None of the above"
+			},
+			"Answer": "b"
+		},
+		"Q21": {
+			"Question": "Which of the following statements about SAP R/3 is true?",
+			"Choices": {
+				"a": "It supports a single function or department",
+				"b": "It is an end-to-end enterprise system",
+				"c": "Sharing data between departments is problematic",
+				"d": "None of the above"
+			},
+			"Answer": "b"
+		},
+		"Q22": {
+			"Question": "The most common organizational structure within modern organizations is the functional structure.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q23": {
+			"Question": "Losing sight of the big picture is commonly referred to as the silo effect.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q24": {
+			"Question": "Systems that support end-to-end processes are called business processes.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q25": {
+			"Question": "An enterprise system is a set of tasks or activities that produce desired outcomes.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q26": {
+			"Question": "Without the various steps of the business process, a company can’t successfully bill customers and ship products.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q27": {
+			"Question": "The lifecycle data management (design) process supports the design and development of products from the initial product idea stage through the discontinuation of the product.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q28": {
+			"Question": "The material planning process is used to maintain internal assets such as machinery and to delivery after-sales customer services such as repairs.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q29": {
+			"Question": "The fulfillment process (sell) consists of all the steps involved in selling and delivering the products to the organization’s customers.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q30": {
+			"Question": "The financial accounting process focuses on internal reporting to manage costs and revenues.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q31": {
+			"Question": "The procurement process includes all of the tasks involved in acquiring needed materials.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q32": {
+			"Question": "Within the production process, the issuing of raw materials takes place in the warehouse.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q33": {
+			"Question": "Materials encompass all the products, components, and parts that are used in an organization.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q34": {
+			"Question": "Lead time is the time between placing the order and receiving confirmation that the item has been shipped.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q35": {
+			"Question": "The purpose of material planning is to match supply with demand.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q36": {
+			"Question": "Insufficient supply results in a situation called 'stock out.'",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q37": {
+			"Question": "Excess supply will result in lower inventory costs because the company is eligible for a bulk rate.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q38": {
+			"Question": "Forecasts of finished goods are determined by data from material planning.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q39": {
+			"Question": "Large warehouses do not need to move items as quickly and efficiently as smaller warehouses.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q40": {
+			"Question": "Asset management is concerned with both the preventive and the corrective maintenance of an organization’s equipment.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q41": {
+			"Question": "Document management provides tools to manage and store documents securely and to keep track of the multiple versions of these documents.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q42": {
+			"Question": "The final stage of asset management and customer service is the authorization maintenance stage.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q43": {
+			"Question": "The final stage of the customer service process is the settlement stage.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q44": {
+			"Question": "A project is permanent in nature and is typically associated with smaller, simpler projects.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q45": {
+			"Question": "During the planning phase of a project the scope of the project is defined and the milestones and deadlines are established. ",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q46": {
+			"Question": "Projects rely on resources located in and work performed in other processes.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q47": {
+			"Question": "Common reports of financial accounting include income statement, profit and loss, and balance sheet. ",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		},
+		"Q48": {
+			"Question": "Accounts payable is used to track money owed by customers.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q49": {
+			"Question": "Asset accounting is concerned with tracking financial data related to assets such as machinery and cars.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q50": {
+			"Question": "Accounts receivable is used to track money that is owed to vendors.",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "b"
+		},
+		"Q51": {
+			"Question": "Management accounting helps an organization track costs and revenues to assess its profitability",
+			"Choices": {
+				"a": "True",
+				"b": "False"
+			},
+			"Answer": "a"
+		}
+
+	}
+}

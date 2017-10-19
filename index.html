@@ -24,8 +24,16 @@
     <!-- Custom Styles (FUTURE) -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Test Quiz Data -->
+    <script src="quizzes/templateQuiz.js"></script>
+
     <!-- Core JavaScript Methods -->
     <script src="js/core.js"></script>
+
+
+
+
+
 </head>
 
 <body class="container">
@@ -39,11 +47,12 @@
     <p id="question">The question goes here</p>
     <!-- Generate radio buttons based on the question chosen -->
     <form id="optionsForm">
-
-        <input type="radio" name="gender" value="male" checked> answer 1<br>
-        <input type="radio" name="gender" value="female"> Another answer<br>
-        <input type="radio" name="gender" value="other"> Third answer  <br>
-        <input id="NextButton" type="submit" value="Next" />
+        <div id="options">
+            <input type="radio" name="gender" value="male" checked> answer 1<br>
+            <input type="radio" name="gender" value="female"> Another answer<br>
+            <input type="radio" name="gender" value="other"> Third answer  <br>
+        </div>
+        <input id="nextButton" type="submit" value="Next" />
 
     </form>
 
