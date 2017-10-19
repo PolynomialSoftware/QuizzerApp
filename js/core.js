@@ -4,8 +4,14 @@
 */
 
 $(document).ready(function () {
-
+  // Load the quiz
   var quiz = JSON.parse(text);
+
+  // Display total number of Questions
+
+  // Display current score
+
+  // Display One Question
   displayOneQuestion(quiz);
 })
 
