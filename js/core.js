@@ -10,21 +10,39 @@ $(document).ready(function () {
   // Display total number of Questions
   $("#totalQuizQuestions").text(quiz.questions.length);
 
-  // Display current score
-  
+  // Display current score 
+  $("#score").text("0");
+  $("#scoreOutOf").text("/" + quiz.questions.length);
 
   // Generate random question number 
   var randomQuestionNum = Math.floor(Math.random() * quiz.questions.length); 
 
-
   // Display One Question
-  displayOneQuestion(quiz, randomQuestionNum);
+  displayOneQuestion(quiz,randomQuestionNum);
+
+  $("#testValue").text(quiz.questions[randomQuestionNum].answerIndex); // show answer index for testing
+
+
+  $("#nextButton").click(function(){
+    nextButtonClicked(quiz,randomQuestionNum);
+  })
+
 })
 
-$("#nextButton").click(function () {
+function nextButtonClicked(quiz,randomQuestionNum) {
+  // console.log("next button clicked");
   // Compare the answers from answer to the right answer
   
-})
+  // var radioBtns = $("#options input:radio[name='radioFieldName']");
+  // var submittedOption = radioBtns.index(radioBtns.find(':checked'));
+  // var correctAnswer = quiz.questions[randomQuestionNum].answerIndex;
+  var currentScore = ($("#score").text());  //$("#score").text(parseInt($("#score").text()) + 1);
+
+  currentScore++; 
+  $("#score").text(currentScore);
+
+
+}
 
 function displayOneQuestion(quiz, randomQuestionNum)
 {
