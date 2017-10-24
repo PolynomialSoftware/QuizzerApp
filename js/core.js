@@ -20,9 +20,10 @@ $(document).ready(function () {
   // Display One Question
   displayOneQuestion(quiz,randomQuestionNum);
 
-  $("#testValue").text(quiz.questions[randomQuestionNum].answerIndex); // show answer index for testing
+  // show answer index for testing
+  $("#testValue").text("Correct answer index: " + quiz.questions[randomQuestionNum].answerIndex); 
 
-
+  // Run function when next button clicked
   $("#nextButton").click(function(){
     nextButtonClicked(quiz,randomQuestionNum);
   })
@@ -30,18 +31,24 @@ $(document).ready(function () {
 })
 
 function nextButtonClicked(quiz,randomQuestionNum) {
-  // console.log("next button clicked");
+  // Get selected option
+  var selectedOptionIndex = $('input[name=rbtnCount]:checked').val();
+  console.log(selectedOptionIndex);
+
   // Compare the answers from answer to the right answer
-  
-  // var radioBtns = $("#options input:radio[name='radioFieldName']");
-  // var submittedOption = radioBtns.index(radioBtns.find(':checked'));
-  // var correctAnswer = quiz.questions[randomQuestionNum].answerIndex;
-  var currentScore = ($("#score").text());  //$("#score").text(parseInt($("#score").text()) + 1);
+  var currentScore = ($("#score").text());  // In one line: $("#score").text(parseInt($("#score").text()) + 1);
+  var correctAnswer = quiz.questions[randomQuestionNum].answerIndex;
 
-  currentScore++; 
-  $("#score").text(currentScore);
+  if (selectedOptionIndex == correctAnswer) {
+      currentScore++; 
+      $("#score").text(currentScore);
+      console.log("Correct!");
 
-
+      // Move to next question
+  } 
+  else {
+      console.log("Incorrect!");
+  }
 }
 
 function displayOneQuestion(quiz, randomQuestionNum)
@@ -51,7 +58,7 @@ function displayOneQuestion(quiz, randomQuestionNum)
   $("#question").text(quiz.questions[questionIndex].question);
   for (i = 0; i < quiz.questions[questionIndex].options.length; i++)
   {
-    var radioBtn = $('<input type="radio" name="rbtnCount">' + quiz.questions[questionIndex].options[i] + '</input> </br>');
+    var radioBtn = $('<input type="radio" name="rbtnCount" value=" ' + [i]  + ' ">' + quiz.questions[questionIndex].options[i] + '</input> </br>');
     radioBtn.appendTo("#options");
   }
 }
