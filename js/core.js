@@ -3,57 +3,64 @@
 
 */
 
+var quizQuestionIndexes;
+var curQuestionIndex;
+var currentScore = 0;
 $(document).ready(function () {
-  // Load the quiz
+  // Load data
   var quiz = JSON.parse(text);
+  quizQuestionIndexes = getQuizQuestionIndexes(quiz);
+  var questionIndex = getQuestionIndex(quizQuestionIndexes);
 
-  // Display total number of Questions
+  // Load page
   $("#totalQuizQuestions").text(quiz.questions.length);
-
-  // Display current score 
   $("#score").text("0");
   $("#scoreOutOf").text("/" + quiz.questions.length);
+  displayOneQuestion(quiz,questionIndex);
 
-  // Generate random question number 
-  var randomQuestionNum = Math.floor(Math.random() * quiz.questions.length); 
-
-  // Display One Question
-  displayOneQuestion(quiz,randomQuestionNum);
-
-  // show answer index for testing
-  $("#testValue").text("Correct answer index: " + quiz.questions[randomQuestionNum].answerIndex); 
-
-  // Run function when next button clicked
+  // Page events
   $("#nextButton").click(function(){
-    nextButtonClicked(quiz,randomQuestionNum);
-  })
-
+    nextButtonClicked(quiz);
+  })  
 })
 
-function nextButtonClicked(quiz,randomQuestionNum) {
-  // Get selected option
+function getQuizQuestionIndexes(quiz) {
+  var questionIndexArray = []; 
+  for (i = 0; i < quiz.questions.length; i++) {
+    questionIndexArray.push(i);
+  }
+  return questionIndexArray;
+}
+
+// Generate random question index based on number of indexes remaining inside quizQuestionIndexes
+function getQuestionIndex(quizQuestionIndexes) {
+  var randomQuestionNumberIndex = Math.floor(Math.random() * quizQuestionIndexes.length);
+  return randomQuestionNumberIndex;
+}
+
+function nextButtonClicked(quiz) {
   var selectedOptionIndex = $('input[name=rbtnCount]:checked').val();
-  console.log(selectedOptionIndex);
+  if (typeof selectedOptionIndex != 'undefined') {
+    var correctAnswer = quiz.questions[curQuestionIndex].answerIndex;
+    console.log(selectedOptionIndex + " " + correctAnswer);
+    if (selectedOptionIndex == correctAnswer) {
+        currentScore++; 
+        $("#score").text(currentScore);
+        console.log("Correct!");
+    } 
+    else {
+        console.log("Incorrect!");
+    }
+    // Reduce Question Array
+    quizQuestionIndexes.splice(questionIndex,1);
 
-  // Compare the answers from answer to the right answer
-  var currentScore = ($("#score").text());  // In one line: $("#score").text(parseInt($("#score").text()) + 1);
-  var correctAnswer = quiz.questions[randomQuestionNum].answerIndex;
-
-  if (selectedOptionIndex == correctAnswer) {
-      currentScore++; 
-      $("#score").text(currentScore);
-      console.log("Correct!");
-
-      // Move to next question
-  } 
-  else {
-      console.log("Incorrect!");
+    // Next Question
+    var questionIndex = getQuestionIndex(quizQuestionIndexes);
+    displayOneQuestion(quiz, questionIndex);
   }
 }
 
-function displayOneQuestion(quiz, randomQuestionNum)
-{
-  var questionIndex = randomQuestionNum;
+function displayOneQuestion(quiz, questionIndex) {
   $("#options").empty();    // Clear old options
   $("#question").text(quiz.questions[questionIndex].question);
   for (i = 0; i < quiz.questions[questionIndex].options.length; i++)
@@ -61,4 +68,7 @@ function displayOneQuestion(quiz, randomQuestionNum)
     var radioBtn = $('<input type="radio" name="rbtnCount" value=" ' + [i]  + ' ">' + quiz.questions[questionIndex].options[i] + '</input> </br>');
     radioBtn.appendTo("#options");
   }
+  curQuestionIndex = questionIndex;
+  console.log("Correct answer index:" + quiz.questions[questionIndex].answerIndex);
+
 }
