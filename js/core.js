@@ -44,12 +44,14 @@ function nextButtonClicked(quiz) {
     var correctAnswer = quiz.questions[curQuestionIndex].answerIndex;
     console.log(selectedOptionIndex + " " + correctAnswer);
     if (selectedOptionIndex == correctAnswer) {
-        currentScore++; 
-        $("#score").text(currentScore);
-        console.log("Correct!");
+      currentScore++; 
+      $("#score").text(currentScore);
+      $("#testValue").text("The answer was correct!");
+      console.log("Correct!");
     } 
     else {
-        console.log("Incorrect!");
+      $("#testValue").text("The answer was incorrect!");
+      console.log("Incorrect!");
     }
     // Reduce Question Array
     quizQuestionIndexes.splice(questionIndex,1);
