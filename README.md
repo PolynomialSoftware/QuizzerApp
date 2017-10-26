@@ -6,7 +6,9 @@
 ```
 .
 ├── js
-|   └── core.js
+|   ├── core.js
+|   ├── helper-functions.js
+|   └── load-functions.js
 ├── quizzes
 |   ├── templateQuiz.json
 |   ├── ERPChapter1.json
