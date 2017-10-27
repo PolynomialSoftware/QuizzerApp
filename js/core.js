@@ -8,7 +8,7 @@ var curQuestionIndex;
 var currentScore = 0;
 $(document).ready(function () {
   // Load data
-  var quiz = JSON.parse(text);
+  var quiz = JSON.parse(text2);
   quizQuestionIndexes = getQuizQuestionIndexes(quiz);
   var questionIndex = getQuestionIndex(quizQuestionIndexes);
 
@@ -54,11 +54,12 @@ function nextButtonClicked(quiz) {
       console.log("Incorrect!");
     }
     // Reduce Question Array
-    quizQuestionIndexes.splice(questionIndex,1);
-
+    quizQuestionIndexes = quizQuestionIndexes.filter(function(i) {return i !== curQuestionIndex});
+    
     // Next Question
     var questionIndex = getQuestionIndex(quizQuestionIndexes);
     displayOneQuestion(quiz, questionIndex);
+    $("#questionNum").text(parseInt($("#questionNum").text()) + 1);  
   }
 }
 
