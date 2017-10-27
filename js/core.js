@@ -8,7 +8,7 @@ var curQuestionIndex;
 var currentScore = 0;
 $(document).ready(function () {
   // Load data
-  var quiz = JSON.parse(text2);
+  var quiz = JSON.parse(text4);
   quizQuestionIndexes = getQuizQuestionIndexes(quiz);
   var questionIndex = getQuestionIndex(quizQuestionIndexes);
 
