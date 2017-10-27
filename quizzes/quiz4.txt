@@ -1,4 +1,4 @@
-Which one of the following is not a type of organizational data that is utilized in the procurement process?
+﻿Which one of the following is not a type of organizational data that is utilized in the procurement process?
 
 Client
 Company Code
@@ -42,8 +42,7 @@ Plant level
 Cross-plant
 
 
-Within the plant-level purchasing organization, also known as a plant-specific purchasing
- Organization, 
+Within the plant-level purchasing organization, also known as a plant-specific purchasing Organization,
 
 Each plant has its own purchasing organization
 One purchasing organization is responsible for multiple plants
@@ -61,8 +60,7 @@ Creating and monitoring purchase orders
 Planning for material requirements
 
 
-Which one of the following is not one of the data types that are relevant to the purchasing 
-process? 
+Which one of the following is not one of the data types that are relevant to the purchasing process? 
 
 Material master
 Vendor master
@@ -107,8 +105,7 @@ Third-party order
 Search term
 
 
-Which item category would you use to have your vendor ship goods directly to your 
-customer?
+Which item category would you use to have your vendor ship goods directly to your customer?
 
 Consignment
 Third-party
@@ -144,8 +141,7 @@ Picking document
 Invoice
 
 
-A FI document includes a header and an items section.  Which of the following data are 
-included in the items section?
+A FI document includes a header and an items section.  Which of the following data are included in the items section?
 
 Document number
 Account
@@ -181,8 +177,7 @@ Outcomes
 None of the above
 
 
-A company can use which of the following to select a vendor from a list of potential
-suppliers ?
+A company can use which of the following to select a vendor from a list of potential suppliers ?
 
 Source list
 Company code
@@ -217,6 +212,7 @@ Fax
 Print
 All of the above
 
+
 Which of the following is(are) a form of data within the goods receipt step?
 
 Material ordered
@@ -244,8 +240,7 @@ Task
 None of the above
 
 
-Which of the following facilitates the integration between vendor master data and financial 
-accounting?
+Which of the following facilitates the integration between vendor master data and financial accounting?
 
 Vendor account number
 Reconciliation account
@@ -261,4 +256,142 @@ Business intelligence systems
 Financial information systems
 Human resource information systems
 
+
+---
+Storage locations are places within a plant were materials are kept until they are needed. 
+
+
+There can only be one storage location within a plant. 
+
+
+A storage location is a key organizational element in purchasing.
+
+
+A purchasing organization is involved only in negotiating prices with vendors 
+
+
+Typically, there are three models of purchasing organizations: enterprise-level, company-level, and plant-level. 
+
+
+The enterprise‐level purchasing organization is also known as the cross‐company code purchasing organization. 
+
+
+The company-level purchasing organization is the most centralized model.
+
+
+The enterprise-level purchasing organization is the most centralized model. 
+
+
+A plant can belong to more than one company code.
+
+
+The most decentralized model of purchasing organizations is the plant‐specific purchasing organization.
+
+
+A purchasing group is an internal group that is responsible for executing the procurement process.
+
+
+A purchasing organization is an individual or a group of individuals who are responsible for purchasing activities for a material or group of materials. 
+
+
+Vendor master data include the data needed to conduct business with a vendor and to execute transactions related to the procurement process.
+
+
+The method used to value material is defined in the material master.
+
+
+Different material types have different required material views.
+
+
+General data related to a vendor are accessible to all company codes in a client.
+
+
+Purchasing data related to a vendor are accessible to all purchasing organizations.
+
+
+Material master data can be defined differently for different organizational levels.
+
+
+A purchasing info record is an intersection or combination of material and accounting data.
+
+
+Accounting data related to a vendor are accessible to all clients in a company code.
+
+
+Item categories in a purchase order determine the process steps used to procure materials.
+
+
+Consumable materials are acquired to be used within an organization.
+
+
+When purchasing consumable materials, an account assignment category and specific account assignment objects must be provided when the purchase order is created.
+
+
+A goods movement is not required when changing the status of material from “in quality inspection” to “unrestricted use”.
+
+
+A plant-to-plant movement of goods does not generate an accounting document.
+
+
+A goods receipt cannot be accomplished without a movement type.
+
+
+A stock transfer does not involve a change in storage location.
+
+
+A transfer posting changes the stock status of a material and need not involve a physical movement of goods.
+
+
+A goods movement is a transaction that causes a change in stock value or status.
+
+
+Materials cannot be moved from one company code to another because each company code uses a different set of books.
+
+
+A transfer posting is used to move materials from one storage location to another.
+
+
+A transfer posting does not generate a material document.
+
+
+Requirements for materials must be created manually.
+
+
+The data needed to create a purchase requisition are the item category, quantity, desired delivery date, and desired delivery location or receiving plant. 
+
+
+A requisition represents a legal obligation to make the purchase.
+
+
+The header section of a purchase order contains information such as purchase order number, vendor, currency, dates, and payment terms.
+
+
+The primary task of the order processing step is to create and send the purchase order to the vendor.
+
+
+SAP cannot utilize any media except Web services to communicate a purchase order to a vendor.
+
+
+Materials ordered in multiple purchase orders must be delivered in multiple shipments.
+
+
+The material master is updated after the invoice verification step of the procurement process has been completed.
+
+
+The material master is updated after the goods receipt step of the procurement process has been completed.
+
+
+Tolerances for price variations among purchase orders, invoices, and goods receipts are allowed, but tolerances for quantity variances are not.
+
+
+Invoice verification authorizes payment of the invoice to the vendor.
+
+
+Payments must be made automatically through a payment program.
+
+
+Electronic payments are sent automatically.
+
+
+Work lists display lists of master data and documents that are generated during the execution of a process.
 
