@@ -8,8 +8,8 @@
 			"quiz-selector quiz-selector quiz-selector"
 			"quiz-name quiz-name quiz-name"
 			". question-result quiz-score"
-			"question-number question-text button"
-			". question-options button"
+			"question-number question-text submit-answer-button"
+			". question-options submit-answer-button"
 	}
 }
 
@@ -45,6 +45,6 @@ body {
 	grid-area: question-result;
 }
 
-#button {
-	grid-area: button;
+#submit-answer-button {
+	grid-area: submit-answer-button;
 }
