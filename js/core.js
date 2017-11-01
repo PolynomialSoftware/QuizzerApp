@@ -3,14 +3,16 @@
 
 */
 
-var quizQuestionIndexes;
-var curQuestionIndex;
-var currentScore = 0;
+var QUIZ_QUESTION_INDEXES;
+var CUR_QUESTION_INDEX;
+var CURRENT_SCORE = 0;
+
+
 $(document).ready(function () {
   // Load data
-  var quiz = JSON.parse(text2);
-  quizQuestionIndexes = getQuizQuestionIndexes(quiz);
-  var questionIndex = getQuestionIndex(quizQuestionIndexes);
+  var quiz = JSON.parse(text3);
+  QUIZ_QUESTION_INDEXES = getQuizQuestionIndexes(quiz);
+  var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
 
   // Load page
   $("#totalQuizQuestions").text(quiz.questions.length);
@@ -32,46 +34,78 @@ function getQuizQuestionIndexes(quiz) {
   return questionIndexArray;
 }
 
-// Generate random question index based on number of indexes remaining inside quizQuestionIndexes
-function getQuestionIndex(quizQuestionIndexes) {
-  var randomQuestionNumberIndex = Math.floor(Math.random() * quizQuestionIndexes.length);
-  return randomQuestionNumberIndex;
+// Generate random question index based on number of indexes remaining inside QUIZ_QUESTION_INDEXES
+function getQuestionIndex(QUIZ_QUESTION_INDEXES) {
+  var randomQuestionNumberIndex = Math.floor(Math.random() * QUIZ_QUESTION_INDEXES.length);
+  return QUIZ_QUESTION_INDEXES[randomQuestionNumberIndex];
 }
 
 function nextButtonClicked(quiz) {
+  var correctAnswer = quiz.questions[CUR_QUESTION_INDEX].answerIndex;
   var selectedOptionIndex = $('input[name=rbtnCount]:checked').val();
+
+  // 1. Check Answer
+
   if (typeof selectedOptionIndex != 'undefined') {
-    var correctAnswer = quiz.questions[curQuestionIndex].answerIndex;
-    console.log(selectedOptionIndex + " " + correctAnswer);
     if (selectedOptionIndex == correctAnswer) {
-      currentScore++; 
-      $("#score").text(currentScore);
-      $("#testValue").text("The answer was correct!");
-      console.log("Correct!");
+      displayCorrect();
+      CURRENT_SCORE++;
     } 
     else {
-      $("#testValue").text("The answer was incorrect!");
-      console.log("Incorrect!");
+      displayIncorrect();
     }
-    // Reduce Question Array
-    quizQuestionIndexes = quizQuestionIndexes.filter(function(i) {return i !== curQuestionIndex});
+
+    // 2. Reduce Question Array
+
+    QUIZ_QUESTION_INDEXES = QUIZ_QUESTION_INDEXES.filter(function(i) {return i !== CUR_QUESTION_INDEX});
     
-    // Next Question
-    var questionIndex = getQuestionIndex(quizQuestionIndexes);
-    displayOneQuestion(quiz, questionIndex);
-    $("#questionNum").text(parseInt($("#questionNum").text()) + 1);  
+
+    // 3. Display End or Next Question
+
+    if (QUIZ_QUESTION_INDEXES === undefined || QUIZ_QUESTION_INDEXES.length == 0) {
+      clearQuestion();
+      displayEndOfQuiz();
+    }
+    else {
+      // Next Question
+      var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
+      displayOneQuestion(quiz, questionIndex);
+    }
   }
 }
 
+function displayCorrect() {
+  $("#score").text(CURRENT_SCORE);
+  $("#testValue").text("The answer was correct!");
+  console.log("Correct!");
+}
+
+function displayIncorrect() {
+  $("#testValue").text("The answer was incorrect!");
+  console.log("Incorrect!");
+}
+
+function displayEndOfQuiz() {
+  $("#question").text("You have completed the quiz.");
+}
+
 function displayOneQuestion(quiz, questionIndex) {
-  $("#options").empty();    // Clear old options
+  clearQuestion();
   $("#question").text(quiz.questions[questionIndex].question);
   for (i = 0; i < quiz.questions[questionIndex].options.length; i++)
   {
     var radioBtn = $('<input type="radio" name="rbtnCount" value=" ' + [i]  + ' ">' + quiz.questions[questionIndex].options[i] + '</input> </br>');
     radioBtn.appendTo("#options");
   }
-  curQuestionIndex = questionIndex;
-  console.log("Correct answer index:" + quiz.questions[questionIndex].answerIndex);
+  CUR_QUESTION_INDEX = questionIndex;
 
+  // if (QUIZ_QUESTION_INDEXES.length == 1) {
+  //   $("#nextButton").text("Finish");
+  // }
+  $("#questionNum").text(parseInt($("#questionNum").text()) + 1); 
+}
+
+function clearQuestion() {
+  $("#question").empty();
+  $("#options").empty();    
 }
