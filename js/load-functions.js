@@ -1,7 +1,7 @@
 function getQuiz(quizName)
 {
 	var url = "quizzes/" + quizName + ".json";
-    console.log();
+    //console.log();
     $.ajax({
         type: "GET",
         url: url,

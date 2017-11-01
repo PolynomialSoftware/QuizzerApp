@@ -43,29 +43,29 @@
 <h1>Select Quiz</h1>
 
 <p>Select quiz from dropdown menu</p>
-<select id="chapter-select" onChange="getQuiz(this.value)">
-    <option value="EEERRP">select a chapter..</option>
-    <option value="ERPChapter1">Chapter 1</option>
-    <option value="ERPChapter2">Chapter 2</option>
+<select id="chapter-select">
+    <option value="">Select a quiz...</option>
+    <option value="ERPChapter1">ERP Chapter 1</option>
+    <option value="ERPChapter2">ERP Chapter 2</option>
+    <option value="ERPChapter4">ERP Chapter 4</option>
 </select>
 <input id="select-quiz-button" type="submit"/>
 </div>
 
 
-<h2 id="quiz-name">Selected Quiz</h1>
+<h2 id="quiz-name">Select a Quiz</h1>
 
-<p id="quiz-score"><span id="correct-answers"></span><span id="quiz-question-count"></span></p>
+<p id="quiz-score"><span id="correct-answers"></span>/<span id="quiz-question-count"></span></p>
 
 <p id="question-result"></p>
 
-<p id="question-number">0</p>
+<p id="question-number"></p>
 
 <p id="question-text"></p>
 
-<form id="question-options">
-    
-</form>
-<input id="button" type="submit" />
+<form id="question-options"></form>
+
+<input id="button" type="submit" hidden="true" />
    
 </body>
 
