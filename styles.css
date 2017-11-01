@@ -7,7 +7,7 @@
 		grid-template-areas: 
 			"quiz-selector quiz-selector quiz-selector"
 			"quiz-name quiz-name quiz-name"
-			". question-result ."
+			". question-result quiz-score"
 			"question-number question-text button"
 			". question-options button"
 	}
@@ -26,10 +26,9 @@ body {
 	grid-area: quiz-name;
 }
 
-#quiz-question-count {
-	grid-area: quiz-question-count;
+#quiz-score {
+	grid-area: quiz-score;
 }
-
 #question-number {
 	grid-area: question-number;
 }
