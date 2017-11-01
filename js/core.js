@@ -15,6 +15,7 @@ $(document).ready(function () {
   var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
 
   // Load page
+  $("#quiz-name").text(quiz.quizName);
   $("#quiz-question-count").text(quiz.questions.length);
   $("#correct-answer").text("0");
   //$("#quiz-question-count").text("/" + quiz.questions.length);
