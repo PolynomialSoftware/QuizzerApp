@@ -1,0 +1,53 @@
+
+@media only screen and (min-width: 760px) {
+	body {
+		display: grid;
+		grid-template-columns: 15% auto 15%;
+		grid-template-rows: auto 15% auto 30%;
+		grid-template-areas: 
+			"quiz-selector quiz-selector quiz-selector"
+			"quiz-name quiz-name quiz-name"
+			"question-number question-text button"
+			". question-options button"
+	}
+}
+
+
+/* Mobile */
+body {
+	display: grid;
+	grid-template-columns: 15% auto 15%;
+	grid-template-rows: auto 15% auto 30%;
+	grid-template-areas: ;
+}
+
+#quiz-selector {
+	grid-area: quiz-selector;
+}
+#quiz-name {
+	grid-area: quiz-name;
+}
+
+#quiz-question-count {
+	grid-area: quiz-question-count;
+}
+
+#question-number {
+	grid-area: question-number;
+}
+
+#question-text {
+	grid-area: question-text;
+}
+
+#question-options {
+	grid-area: question-options;
+}
+
+#question-result {
+	grid-area: question-result;
+}
+
+#button {
+	grid-area: button;
+}
