@@ -10,18 +10,18 @@ var CURRENT_SCORE = 0;
 
 $(document).ready(function () {
   // Load data
-  var quiz = JSON.parse(text3);
+  var quiz = JSON.parse(text4);
   QUIZ_QUESTION_INDEXES = getQuizQuestionIndexes(quiz);
   var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
 
   // Load page
-  $("#totalQuizQuestions").text(quiz.questions.length);
-  $("#score").text("0");
-  $("#scoreOutOf").text("/" + quiz.questions.length);
+  $("#quiz-question-count").text(quiz.questions.length);
+  $("#correct-answer").text("0");
+  //$("#quiz-question-count").text("/" + quiz.questions.length);
   displayOneQuestion(quiz,questionIndex);
 
   // Page events
-  $("#nextButton").click(function(){
+  $("#button").click(function(){
     nextButtonClicked(quiz);
   })  
 })
@@ -75,37 +75,37 @@ function nextButtonClicked(quiz) {
 }
 
 function displayCorrect() {
-  $("#score").text(CURRENT_SCORE);
-  $("#testValue").text("The answer was correct!");
+  $("#correct-answer").text(CURRENT_SCORE);
+  $("#question-result").text("The answer was correct!");
   console.log("Correct!");
 }
 
 function displayIncorrect() {
-  $("#testValue").text("The answer was incorrect!");
+  $("#question-result").text("The answer was incorrect!");
   console.log("Incorrect!");
 }
 
 function displayEndOfQuiz() {
-  $("#question").text("You have completed the quiz.");
+  $("#question-text").text("You have completed the quiz.");
 }
 
 function displayOneQuestion(quiz, questionIndex) {
   clearQuestion();
-  $("#question").text(quiz.questions[questionIndex].question);
+  $("#question-text").text(quiz.questions[questionIndex].question);
   for (i = 0; i < quiz.questions[questionIndex].options.length; i++)
   {
     var radioBtn = $('<input type="radio" name="rbtnCount" value=" ' + [i]  + ' ">' + quiz.questions[questionIndex].options[i] + '</input> </br>');
-    radioBtn.appendTo("#options");
+    radioBtn.appendTo("#question-options");
   }
   CUR_QUESTION_INDEX = questionIndex;
 
   // if (QUIZ_QUESTION_INDEXES.length == 1) {
   //   $("#nextButton").text("Finish");
   // }
-  $("#questionNum").text(parseInt($("#questionNum").text()) + 1); 
+  $("#question-number").text(parseInt($("#question-number").text()) + 1); 
 }
 
 function clearQuestion() {
-  $("#question").empty();
-  $("#options").empty();    
+  $("#question-text").empty();
+  $("#question-options").empty();    
 }

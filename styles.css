@@ -2,11 +2,12 @@
 @media only screen and (min-width: 760px) {
 	body {
 		display: grid;
-		grid-template-columns: 20% 65% 15%;
-		grid-template-rows: auto 15% auto 30%;
+		grid-template-columns: 15% 70% 15%;
+		grid-template-rows: auto 15% 15px auto 30%;
 		grid-template-areas: 
 			"quiz-selector quiz-selector quiz-selector"
 			"quiz-name quiz-name quiz-name"
+			". question-result ."
 			"question-number question-text button"
 			". question-options button"
 	}

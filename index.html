@@ -34,47 +34,40 @@
     <script src="js/helper-functions.js"></script>
     <script src="js/load-functions.js"></script>
     <script src="js/core.js"></script>
-
-
-
-
-
 </head>
 
 <body class="container">
+
+
+<div id=quiz-selector>
+<h1>Select Quiz</h1>
+
+<p>Select quiz from dropdown menu</p>
+<select id="chapter-select" onChange="getQuiz(this.value)">
+    <option value="EEERRP">select a chapter..</option>
+    <option value="ERPChapter1">Chapter 1</option>
+    <option value="ERPChapter2">Chapter 2</option>
+</select>
+</div>
+
+
+<h2 id="quiz-name">Quiz Name</h1>
+
+<p><span id="quiz-question-count"></span></p>
+
+<p><span id="correct-answers"></span></p>
+
+<p id="question-result"></p>
+
+<p id="question-number">0</p>
+
+<p id="question-text">The question goes here</p>
+
+<form id="question-options">
     
-    <h1>Select Quiz</h1>
-    
-    <p>Select quiz from dropdown menu</p>
-    <select id="chapter-select" onChange="getQuiz(this.value)">
-        <option value="EEERRP">select a chapter..</option>
-        <option value="ERPChapter1">Chapter 1</option>
-        <option value="ERPChapter2">Chapter 2</option>
-    </select>
-    <!-- <button id="nextButton" type="button"> Next </button>  -->
-    <hr />
-    <h1>Default Quiz Name</h1>
-    <p>Total number of questions: <span id="totalQuizQuestions">20</span></p>
-    <p>Your current Score: <span id="score">5</span><span id="scoreOutOf">/50</span></p>
-    <hr/>
-    <div>
-
-    <p id="testValue"></p>
-    <p>Question Number  <span id="questionNum">1</span></p>
-    <p id="question">The question goes here</p>
-    <!-- Generate radio buttons based on the question chosen -->
-    <form id="optionsForm">
-        <div id="options">
-            <input type="radio" name="gender" value="male" checked> answer 1<br>
-            <input type="radio" name="gender" value="female"> Another answer<br>
-            <input type="radio" name="gender" value="other"> Third answer  <br>
-        </div>
-        <button id="nextButton" type="button"> Next </button>
-
-    </form>
-
-
-    </div>
+</form>
+<input id="button" type="submit" />
+   
 </body>
 
 </html>
