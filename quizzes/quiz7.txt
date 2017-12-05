@@ -1,0 +1,344 @@
+Which of the following statements about the goods receipt step are NOT true?
+
+It results in a decrease in inventory. 
+It can occur during the procurement process.
+It can result in the creation of material and financial accounting documents. 
+Materials are placed in an appropriate storage location with an appropriate status. 
+It can occur during the production process.
+
+
+The key organizational level associated with inventory management is 
+
+Plant. 
+Company code. 
+Storage section. 
+Storage area.
+Storage location.
+
+
+When do unplanned receipts occur? 
+
+When an invoice has been canceled
+When material is transferred to another location
+When a reference document does not exist
+When a stock transfer is created
+When the capacity of a storage location is exceeded
+
+
+In the production process, a goods issue reflects
+
+Moving raw materials or semi-finished goods from a work center to storage bins.
+Shipping finished goods or trading goods to a customer to fill a sales order.
+Issuing finished goods to a production order. 
+Shipping finished goods to a customer against a goods issue request.
+Issuing raw materials or semi-finished goods to a production order.
+
+
+Which of the following scenarios requires material-to-material posting?
+
+Changing the material status from consignment to warehouse stock
+Changing the material number of a material
+Changing the material’s storage location
+Changing the status of materials in stock
+Changing the type of materials in stock
+
+
+Which one of the following is NOT an example of using transfer postings?
+
+Changing the material status from consignment to warehouse stock
+Changing the material number of a material
+Changing the material’s storage location
+Changing the status of materials in stock
+Changing the type of materials in stock
+
+
+What is a stock transfer used for?
+
+To change the status or type of materials in stock 
+To show material movements when a material is received in the warehouse from the vendor’s location 
+To indicate that a material-to-material change has been posted
+To physically move materials from a storage location to the client’s warehouse
+To physically move materials within the enterprise from one organizational level or location to another
+
+
+Which of the following options is appropriate when two locations are physically close to each other and there is no significant time lag between issue and receipt?
+
+One-step procedure
+Two-step procedure
+Three-step procedure
+Stock transport order
+None of the above
+
+
+A storage location-to-storage location transfer involves which of the following? 
+
+A stock transfer among several storage locations of two plants
+A stock transfer between two storage locations of two plants
+A stock transfer among several storage locations within the same plant
+A stock transfer between two storage locations within the same plant 
+A stock transfer between or among at least two storage locations within one or more plants
+
+
+In plant-to-plant transfer, an FI document
+
+Is created in both one-step and two-step movements.
+Is created in two-step movements only.
+Is created in one-step movements only.
+Is not created. 
+
+
+Which of the following represents the hierarchy of a warehouse?
+
+Warehouse, storage section, storage type, storage bin  
+Warehouse, storage bin, storage section, storage type
+Warehouse, storage type, storage section, storage bin
+Warehouse, storage section, storage bin, storage type
+Warehouse, storage type, storage bin, storage section
+
+
+Shelf storage, pallet storage, and rack storage are examples of 
+
+Storage bins. 
+Warehouses.
+Storage sections.
+Storage types.
+None of the above
+
+
+A storage type is a division of a warehouse based on the characteristics of the 
+
+Weight, width, and type
+Dimensions and profitability.
+Space, materials, and activity.
+Price, space, and type.
+Usage, price, and dimensions.
+
+
+Fast-moving, slow-moving, heavy, light, large, and small are examples of 
+
+Storage bins. 
+Warehouses.
+Storage sections.
+Storage types.
+None of the above.
+
+
+A picking area groups which of the following elements? 
+
+Shelves and pallets
+Storage bins, based on similar picking strategies
+Materials with similar transportation type
+Materials with similar usage
+Materials of the same material type
+
+
+If a company stores a material in a storage location that is associated with a warehouse, then it must include additional data 
+
+In the storage location stock view of the material master for that material.
+In the basic data view of the material master for that material.
+In the general plant data/storage view of the material master for that material.
+In the warehouse management view of the material master for that material.
+No data need to be added. 
+
+
+Shelves, stacks, and aisles are examples of 
+
+Storage locations.
+Coordinate systems for addresses.
+Storage sections.
+Storage identifiers.
+Storage areas.
+
+
+Which of the following represents the document used to plan the movement of materials into and out of bins in a warehouse? 
+
+Transfer list
+Transfer request
+Transfer plan
+Transfer order
+Transfer requirement
+
+
+Which of the following is a request to change the status of the material? 
+
+Posting change notice
+Notice for change
+Material change list
+Status request list
+Change request
+
+
+When creating a transfer order, you find that a particular material has to be moved from multiple source bins. Which of the following statements follows from this scenario?
+
+The transfer order will have multiple line items for the material.
+More than one transfer order needs to be created.
+The material will be written in one line item.
+An internal order request will be created to move the material into one source bin.
+This scenario is impossible.
+
+
+The ERP system can create transfer orders automatically, but only when 
+
+A destination is known.
+The reference document is a transfer requirement   
+A warehouse movement type is specified.
+A reference document exists.
+Both the plant and the storage location are known.
+
+
+Which of the following represents a possible sequence of steps in the warehouse movement process? 
+
+Create a transfer request, physically move the materials, confirm the movement, retrieve the transfer request
+Physically move the materials, confirm the movement, create a transfer request, retrieve the transfer request
+Physically move the materials, generate a transfer order, confirm the movement, retrieve the transfer order
+Generate a transfer order, retrieve the transfer order. confirm the movement, physically  move the materials
+Generate a transfer order, physically move the materials, retrieve the transfer order, confirm the movement
+
+
+In warehouse management steps associated with the procurement process, the warehouse inventory is calculated as sum of the inventory in the following places: 
+
+Storage sections and storage areas
+Warehouse bins and storage sections
+Interim storage areas and warehouse bins
+Storage locations and storage sections
+Storage locations and storage areas
+
+
+In a stock transfer from a plant where the storage location is warehouse managed to a plant where it is not, which of the following activities occurs at the receiving plant? 
+
+A goods receipt triggers WM process steps.
+A simple goods receipt is recorded in IM.
+A goods issue triggers WM process steps.
+A simple goods issue is recorded in IM. 
+None of the above
+
+
+In a bin status report, double-clicking on a bin that contains materials
+
+Produces a drilldown report showing details of the materials. 
+Opens a screen that enables you to change which bin is shown on the report.
+Produces information about the bin location.
+Opens a screen where storage bin information can be configured.
+Will not display any data.
+
+
+Warehouse management is typically used
+
+By organizations that have small quantities of materials. 
+By transportation companies.
+By organizations that have either large quantities of materials or an expensive inventory.
+By storage companies.
+By organizations that demand better reporting for their inventory. 
+
+
+A storage location is a key organizational level associated with inventory management. 
+
+
+The most relevant category of master data in inventory management is the plant. 
+
+
+A goods receipt cannot be posted without reference to an order.
+
+
+Planned receipts occur when a reference document, such as a purchase order or a production order does not exist.
+
+
+A goods issue results in the creation of appropriate material, FI, and CO documents. 
+
+
+A goods issue, unlike a goods receipt, can be posted without reference to an order. 
+
+
+A goods issue, unlike a goods receipt, results in a decrease in inventory. 
+
+
+A transfer posting always involves an actual movement of materials. 
+
+
+To change a material number you need to create a change request. 
+
+
+In a consignment scenario, when raw materials are consumed in the production process, the status of the materials is changed from warehouse stock to consignment. 
+
+
+A stock transfer involves physically moving materials. 
+
+
+One-step procedure, two-step procedure, and stock transport order are strategies for moving materials. 
+
+
+A material document is created during both the one-step and two-step procedures.
+
+
+During the one-step procedure, two material documents are created.
+	
+
+Moving materials between two storage locations within the same plant or different plants is known as storage location-to-storage location transfer. 
+
+
+One-step procedure is possible only when the materials are in unrestricted use at the supplying location.
+
+
+When transferring materials between storage locations in the same plant, if quantities are valued in the same way, then no FI document is created.
+
+
+In plant-to-plant transfer in the two-step method, the FI document is created at the time of receipt.
+
+
+A movement of materials between two plants in different company codes is called a company code-to-company code transfer.
+
+
+Stock transport orders with delivery include the invoice verification step.
+
+
+In stock transport orders with delivery and billing, valuation is based on the purchase price in the STO.
+
+
+Inventory management keeps track of the quantity of materials in storage location, but it cannot determine their exact location.
+
+
+A storage location can be linked to only one warehouse.
+
+
+A storage type is a division of a storage section that is based on the characteristics of the space, materials, or activity.
+
+
+Storage sections represent the physical links between IM and WM.
+
+
+Shelf storage is an example of a storage type 
+
+
+Lightweight materials are designated as fast-moving materials.
+
+
+A picking area groups materials with the same material type.
+
+
+Storage bins are the smallest unit of space in a warehouse.
+
+
+Transfer requirements can be created manually as well as automatically.
+
+
+Transfer orders are used to execute warehouse movements.
+
+
+Transfer orders can only be created automatically.
+
+
+Target quantities, destination storage type, bin, and quant are examples of line item data in a transfer order.
+
+
+Transfer orders in the execute warehouse management step can be created with or without a reference document.
+
+
+One of the steps of the inventory management process related to procurement is post goods issue.
+
+
+Inventory management in the production process involves a goods issue and a goods receipt.
+
+
+A stock transfer from a storage bin in one warehouse to a storage bin in another warehouse is a possible scenario under which warehouse movements can occur.
+
+
