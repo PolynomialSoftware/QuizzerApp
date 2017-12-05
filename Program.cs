@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using System.Web.Script.Serialization;
+using System.Web.Script.Serialization; // Add reference System.Web.Extensions
 
 namespace ParseQuizText
 {
@@ -13,14 +11,14 @@ namespace ParseQuizText
         static void Main(string[] args)
         {
             // Load file
-            string quizPath = @"C:\Users\hlin7\Documents\GitHub\QuizzerApp\quizzes\quiz4.txt";
-            string answerPath = @"C:\Users\hlin7\Documents\GitHub\QuizzerApp\quizzes\ERPChapter4Key.txt";
-            string outpath = @"C:\Users\hlin7\Documents\GitHub\QuizzerApp\quizzes\ERPChapter4.json";
+            string quizPath = @"C:\Users\hlin7\Documents\GitHub\QuizzerApp\quizzes\quiz7.txt";
+            string answerPath = @"C:\Users\hlin7\Documents\GitHub\QuizzerApp\quizzes\ERPChapter7Key.txt";
+            string outpath = @"C:\Users\hlin7\Documents\GitHub\QuizzerApp\quizzes\ERPChapter7.json";
 
 
             var lines = File.ReadLines(quizPath);
             Quiz quiz = ParseQuestions(lines, "ERP Chapter 4");
-            
+
             var answerLines = File.ReadLines(answerPath);
             quiz = ParseAnswers(answerLines, quiz);
 
@@ -86,7 +84,7 @@ namespace ParseQuizText
                 }
                 else
                 { }
-                    //Console.WriteLine("Error occured while parsing line by line");
+                //Console.WriteLine("Error occured while parsing line by line");
             }
             #endregion 
             Console.WriteLine("Parsing complete!");
@@ -110,9 +108,20 @@ namespace ParseQuizText
                     answerIndexes.Add((int)Enum.Parse(typeof(TfAnswers), answer));
                 }
             }
-            for (int i=0;i<quiz.questions.Count;i++)
+            for (int i = 0; i < quiz.questions.Count; i++)
             {
-                quiz.questions[i].answerIndex = answerIndexes[i];
+                try
+                {
+                    quiz.questions[i].answerIndex = answerIndexes[i];
+                }
+                catch (ArgumentOutOfRangeException e)
+                {
+                    Console.WriteLine("<<<----------      ERROR      ---------->>>");
+                    Console.WriteLine("There are less answers than there are questions. Check the Quiz Key text file");
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("<<<----------      END      ---------->>>");
+                }
+                
             }
             return quiz;
         }
@@ -123,15 +132,15 @@ namespace ParseQuizText
         mcOptions,
         mcEnd,
         tfQuestion
-        
+
     }
     enum McAnswers
     {
-        a,b,c,d,e
+        a, b, c, d, e
     }
     enum TfAnswers
     {
-        t,f
+        t, f
     }
     class Quiz
     {
@@ -141,7 +150,7 @@ namespace ParseQuizText
         }
         public string quizName { get; set; }
         public List<Question> questions { get; set; }
-        
+
 
         // Method
         public void AddQuestion(Question question)
