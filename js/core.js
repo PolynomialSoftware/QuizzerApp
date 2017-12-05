@@ -7,12 +7,14 @@ var QUIZ_QUESTION_INDEXES;
 var CUR_QUESTION_INDEX;
 var CURRENT_SCORE = 0;
 
+var quiz; 
+var quizName;
 
 $(document).ready(function () {
   // Page events
   $("#select-quiz-button").click(function(){
     // ***** Need to get arguement from dropdown list *****
-    loadQuiz(quizName);
+    getQuiz(quizName);
   })
 
   $("#submit-answer-button").click(function(){
@@ -73,7 +75,7 @@ function loadQuiz(quizName) {
   // ***** Need to get arguement from dropdown list *****
   getQuiz(quizName);
   // Load data
-  var quiz = JSON.parse(text4);
+  quiz = JSON.parse(quizName);
   QUIZ_QUESTION_INDEXES = getQuizQuestionIndexes(quiz);
   var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
 

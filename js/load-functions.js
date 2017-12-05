@@ -7,6 +7,7 @@ function getQuiz(quizName)
         url: url,
         success: function(response){
             console.log(response);
+            loadQuiz(response);
         }
-    });
+    });  
 };
