@@ -231,10 +231,11 @@ By storage companies.
 By organizations that demand better reporting for their inventory. 
 
 
+---
 A storage location is a key organizational level associated with inventory management. 
 
 
-The most relevant category of master data in inventory management is the plant. 
+The most relevant category of master data in inventory management is the plant.
 
 
 A goods receipt cannot be posted without reference to an order.
@@ -271,7 +272,7 @@ A material document is created during both the one-step and two-step procedures.
 
 
 During the one-step procedure, two material documents are created.
-	
+
 
 Moving materials between two storage locations within the same plant or different plants is known as storage location-to-storage location transfer. 
 
@@ -340,5 +341,4 @@ Inventory management in the production process involves a goods issue and a good
 
 
 A stock transfer from a storage bin in one warehouse to a storage bin in another warehouse is a possible scenario under which warehouse movements can occur.
-
 

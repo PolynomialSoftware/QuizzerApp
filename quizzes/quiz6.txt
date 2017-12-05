@@ -151,6 +151,7 @@ BOM
 None of the above
 
 
+---
 A bill of materials identifies the finished goods that are to be shipped to a specific customer.
 
 
