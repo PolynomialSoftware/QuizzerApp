@@ -187,7 +187,7 @@ CIRs, but components are not in stock.
 PIRs, but the components are not in stock.
 
 
-Consider the following scenario, then choose which one of the options below corresponds to the level of CIRs and PIRs after consumption. Before consumption: Procurement proposal for CIRs: 50Procurement proposal for PIRs: 50
+Consider the following scenario, then choose which one of the options below corresponds to the level of CIRs and PIRs after consumption. Before consumption: Procurement proposal for CIRs: 50 Procurement proposal for PIRs: 50
 
 CIRs: 50, PIRs: 0
 CIRs: 50, PIRs: 50
@@ -241,7 +241,7 @@ A spreadsheet-like tool used to complete the tasks in SOP.
 A brainstorming session for selecting the most appropriate plan. 
 
 
-Given the information below, calculate disaggregated quantities for touring bikes (TOUR) and off-road bikes (ORBK). Total production = 100 TOUR proportion factor = 35 ORBK proportion factor = 65
+Given the information below, calculate disaggregated quantities for touring bikes (TOUR) and off-road bikes (ORBK).Total production = 100 TOUR proportion factor = 35 ORBK proportion factor = 65
 
 TOUR = 35, ORBK = 65
 TOUR = 65, ORBK = 35
@@ -313,28 +313,29 @@ Required materials per production version.
 All materials needed per MRP element.
 
 
-Lack of overall planning may result in excess inventory and lost sales.
+---
+Lack of overall planning may result in excess inventory and lost sales. 
 
 
-When a company transfers part of the materials in stock from one distribution center to another, this scenario is known as stock-out.
+When a company transfers part of the materials in stock from one distribution center to another, this scenario is known as stock-out. 
 
 
-Material planning is one of the most complex processes within an organization.
+Material planning is one of the most complex processes within an organization. 
 
 
-Planned orders are requests to produce materials.
+Planned orders are requests to produce materials. 
 
 
 MRP uses requirements to generate the final procurement proposals
 
 
-Storage area is one of the organizational data elements in material planning.
+Storage area is one of the organizational data elements in material planning. 
 
 
-Product routings is one of the master data elements in material planning.
+Product routings is one of the master data elements in material planning. 
 
 
-Work scheduling data are defined at the client level.
+Work scheduling data are defined at the client level. 
 
 
 MRP is defined at the plant level. 
@@ -344,7 +345,7 @@ MRP data are specific to each plant.
 
 
 In-house production is the most common procurement type for raw materials. 
-   
+
 
 Semifinished goods are typically purchased from vendors
 
@@ -359,6 +360,7 @@ In time-phased planning, materials are ordered when the stock level reaches a pr
 
 
 Consumption-based planning assumes that future consumption will follow the same patterns as current consumption. 
+
 
 In a scenario when the need for brakes depends on the need to produce cars, consumption-based planning will be an appropriate strategy to use.
 
@@ -426,8 +428,8 @@ After planning the master schedule items, MRP creates dependent requirements for
 MPS is generally appropriate for high-value items only. 
 
 
-MPS creates planned orders for the MPS items and dependent requirements for all items in the BOM. 
- 
+MPS creates planned orders for the MPS items and dependent requirements for all items in the BOM.
+
 
 Net requirements calculation is one of the steps in MRP. 
 
