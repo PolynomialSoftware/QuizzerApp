@@ -3,13 +3,14 @@
 	body {
 		display: grid;
 		grid-template-columns: 15% 70% 15%;
-		grid-template-rows: auto 15% 30px auto 30%;
+		grid-template-rows: auto 15% 30px auto 30% 30px;
 		grid-template-areas: 
 			"quiz-selector quiz-selector quiz-selector"
 			"quiz-name quiz-name quiz-name"
 			". question-result quiz-score"
-			"question-number question-text submit-answer-button"
-			". question-options submit-answer-button"
+			"question-number question-text score"
+			". question-options score"
+			". submit-answer-button ."
 	}
 }
 
@@ -47,4 +48,8 @@ body {
 
 #submit-answer-button {
 	grid-area: submit-answer-button;
+}
+
+#score {
+	grid-area: score;
 }

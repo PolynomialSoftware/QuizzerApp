@@ -43,7 +43,8 @@ function nextButtonClicked(quiz) {
       CURRENT_SCORE++;
     } 
     else {
-      displayIncorrect();
+      displayIncorrect(quiz.questions[CUR_QUESTION_INDEX].question,
+        quiz.questions[CUR_QUESTION_INDEX].options[correctAnswer]);
     }
 
     // 2. Reduce Question Array
@@ -68,29 +69,30 @@ function nextButtonClicked(quiz) {
 function loadQuiz(quiz) {
   QUIZ_QUESTION_INDEXES = getQuizQuestionIndexes(quiz);
   var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
-
-  $("#submit-answer-button").attr("hidden", false);
   $("#quiz-name").text(quiz.quizName);
-  $("#quiz-question-count").text(quiz.questions.length);
+  $("#submit-answer-button").attr("hidden", false);
   $("#question-number").text("0");
-  $("#correct-answer").text("0");
-  //$("#quiz-question-count").text("/" + quiz.questions.length);
+  $("#correct-answers").text("0");
+  $("#quiz-question-count").text(quiz.questions.length);
+  $("#score").attr("hidden", false);
   displayOneQuestion(quiz,questionIndex);
 }
 
 function displayCorrect() {
   $("#correct-answer").text(CURRENT_SCORE);
   $("#question-result").text("The answer was correct!");
+  $("#correct-answers").text(parseInt($("#correct-answers").text())+1);
   console.log("Correct!");
 }
 
-function displayIncorrect() {
-  $("#question-result").text("The answer was incorrect!");
+function displayIncorrect(question, correctAnswer) {
+  $("#question-result").text("Incorrect! " + question + " == " + correctAnswer);
   console.log("Incorrect!");
 }
 
 function displayEndOfQuiz() {
   $("#question-text").text("You have completed the quiz.");
+  $("#submit-answer-button").attr("hidden", true);
 }
 
 function displayOneQuestion(quiz, questionIndex) {
@@ -102,10 +104,6 @@ function displayOneQuestion(quiz, questionIndex) {
     radioBtn.appendTo("#question-options");
   }
   CUR_QUESTION_INDEX = questionIndex;
-
-  // if (QUIZ_QUESTION_INDEXES.length == 1) {
-  //   $("#nextButton").text("Finish");
-  // }
   $("#question-number").text(parseInt($("#question-number").text()) + 1); 
 }
 
