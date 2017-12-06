@@ -1,24 +1,19 @@
 // Display the quiz questions on the page
-/*
-
-*/
 
 var QUIZ_QUESTION_INDEXES;
 var CUR_QUESTION_INDEX;
 var CURRENT_SCORE = 0;
 
-var quiz; 
-var quizName;
+var CURRENT_QUIZ = [];
 
 $(document).ready(function () {
   // Page events
   $("#select-quiz-button").click(function(){
-    // ***** Need to get arguement from dropdown list *****
-    getQuiz(quizName);
+    getQuiz($("#chapter-select option:selected").val());
   })
 
   $("#submit-answer-button").click(function(){
-    nextButtonClicked(quiz);
+    nextButtonClicked(CURRENT_QUIZ);
   })  
 })
 
@@ -70,12 +65,7 @@ function nextButtonClicked(quiz) {
   }
 }
 
-function loadQuiz(quizName) {
-  
-  // ***** Need to get arguement from dropdown list *****
-  getQuiz(quizName);
-  // Load data
-  quiz = JSON.parse(quizName);
+function loadQuiz(quiz) {
   QUIZ_QUESTION_INDEXES = getQuizQuestionIndexes(quiz);
   var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
 
