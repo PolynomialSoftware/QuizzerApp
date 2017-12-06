@@ -71,6 +71,7 @@ function loadQuiz(quiz) {
   var questionIndex = getQuestionIndex(QUIZ_QUESTION_INDEXES);
   $("#quiz-name").text(quiz.quizName);
   $("#submit-answer-button").attr("hidden", false);
+  $("#question-number-text").attr("hidden", false);
   $("#question-number").text("0");
   $("#correct-answers").text("0");
   $("#quiz-question-count").text(quiz.questions.length);
@@ -80,19 +81,22 @@ function loadQuiz(quiz) {
 
 function displayCorrect() {
   $("#correct-answer").text(CURRENT_SCORE);
-  $("#question-result").text("The answer was correct!");
+  $("#question-result").text("Correct!");
+  $("#question-result").attr("class", "alert alert-success");
   $("#correct-answers").text(parseInt($("#correct-answers").text())+1);
   console.log("Correct!");
 }
 
 function displayIncorrect(question, correctAnswer) {
-  $("#question-result").text("Incorrect! " + question + " == " + correctAnswer);
+  $("#question-result").text("Incorrect! " + question + " ---------->> " + correctAnswer);
+  $("#question-result").attr("class", "alert alert-danger");
   console.log("Incorrect!");
 }
 
 function displayEndOfQuiz() {
   $("#question-text").text("You have completed the quiz.");
   $("#submit-answer-button").attr("hidden", true);
+  $("#question-number-text").attr("hidden", true);
 }
 
 function displayOneQuestion(quiz, questionIndex) {

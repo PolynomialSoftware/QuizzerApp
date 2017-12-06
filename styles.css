@@ -2,15 +2,15 @@
 @media only screen and (min-width: 760px) {
 	body {
 		display: grid;
-		grid-template-columns: 15% 70% 15%;
-		grid-template-rows: auto 15% 30px auto 30% 30px;
+		grid-template-columns: 15% 35% 35% 15%;
+		grid-template-rows: auto 15% auto auto 30% auto;
 		grid-template-areas: 
-			"quiz-selector quiz-selector quiz-selector"
-			"quiz-name quiz-name quiz-name"
-			". question-result quiz-score"
-			"question-number question-text score"
-			". question-options score"
-			". submit-answer-button ."
+			"quiz-selector quiz-selector credits credits"
+			"quiz-name quiz-name quiz-name quiz-name"
+			". question-result question-result ."
+			"question-number-text question-text question-text score"
+			". question-options question-options ."
+			". submit-answer-button submit-answer-button .";
 	}
 }
 
@@ -22,16 +22,20 @@ body {
 
 #quiz-selector {
 	grid-area: quiz-selector;
+
 }
-#quiz-name {
-	grid-area: quiz-name;
+#credits {
+	grid-area: credits;
+	font-size: 15px;
 }
 
-#quiz-score {
-	grid-area: quiz-score;
+#quiz-name {
+	grid-area: quiz-name;
+	text-align: center;
 }
-#question-number {
-	grid-area: question-number;
+
+#question-number-text {
+	grid-area: question-number-text;
 }
 
 #question-text {
@@ -52,4 +56,6 @@ body {
 
 #score {
 	grid-area: score;
+	text-align: center;
+	font-size: 30px;
 }

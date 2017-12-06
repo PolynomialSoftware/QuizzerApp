@@ -39,39 +39,50 @@
 <body class="container">
 
 
-<div id=quiz-selector>
-<h1>Select Quiz</h1>
 
-<p>Select quiz from dropdown menu</p>
-<select id="chapter-select">
-    <option value="">Select a quiz...</option>
-<!--     <option value="ERPChapter1">ERP Chapter 1</option>
-    <option value="ERPChapter2">ERP Chapter 2</option>
-    <option value="ERPChapter4">ERP Chapter 4</option> -->
-    <option value="ERPChapter6">ERP Chapter 6</option>
-    <option value="ERPChapter7">ERP Chapter 7</option>
-    <option value="ERPChapter8">ERP Chapter 8</option>
-</select>
-<input id="select-quiz-button" type="submit" />
+<div id=quiz-selector class="jumbotron">
+    <h1>Select Quiz</h1>
+    <p>Select quiz from dropdown menu</p>
+    <div class="row">
+    <select id="chapter-select" class="form-control col-sm-8">
+        <option value="">Select a quiz...</option>
+    <!--     <option value="ERPChapter1">ERP Chapter 1</option>
+        <option value="ERPChapter2">ERP Chapter 2</option>
+        <option value="ERPChapter4">ERP Chapter 4</option> -->
+        <option value="ERPChapter6">ERP Chapter 6</option>
+        <option value="ERPChapter7">ERP Chapter 7</option>
+        <option value="ERPChapter8">ERP Chapter 8</option>
+    </select>
+    <input id="select-quiz-button" type="submit" class="btn btn-primary" class="col-sm-4" />
+    </div>
+</div>
+<div id="credits" class="jumbotron">
+    <p>The purpose of this site is to practice for the ERP quiz.</p>
+    <p>Go forth and practice!</p>
+    <h2>Credits</h2>
+    <ul>
+        <li>Timon Chu</li>
+        <li>Kyle Pederson</li>
+        <li>Hubert Lin</li>
+    </ul>
 </div>
 
 
-<h2 id="quiz-name">Select a Quiz</h1>
 
-
-<p id="score" hidden="true">Score: <span id="correct-answers"></span>/<span id="quiz-question-count"></span></p>
-
+<h2 id="quiz-name"></h2>
 
 <p id="question-result"></p>
 
-<p id="question-number"></p>
+<p id="question-number-text" hidden="true">Question: <span id="question-number"></span></p>
 
 <p id="question-text"></p>
 
 <form id="question-options"></form>
 
-<input id="submit-answer-button" type="submit" hidden="true" />
-   
+<input id="submit-answer-button" type="submit" hidden="true" class="btn btn-primary" />
+
+<p id="score" hidden="true" class="">Score: <span id="correct-answers"></span>/<span id="quiz-question-count"></span></p>
+
 </body>
 
 </html>
